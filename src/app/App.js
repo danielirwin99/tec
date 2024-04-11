@@ -7,7 +7,7 @@ import {
   RouterProvider,
   ScrollRestoration,
 } from "react-router-dom";
-import PressureWashing from "./pages/PressureWashing";
+import PressureWashing from "./pages/pressure-washing/page";
 import Error from "./pages/Error";
 import Contact from "./pages/contact-us/page";
 import WindowCleaning from "./pages/WindowCleaning";

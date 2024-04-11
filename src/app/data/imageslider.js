@@ -17,7 +17,7 @@ import {
   after4,
   before9,
   after9,
-} from "../../../src copy/assets/Gallery/Index";
+} from "../../app/assets/Gallery/Index";
 
 const data = [
   {

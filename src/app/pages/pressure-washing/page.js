@@ -1,19 +1,26 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import Footer from "../../../../src copy/components/Footer";
-import NavbarServices from "../../../../src copy/components/NavbarServices";
-import { me1, pressurewashing } from "../../../../src copy/assets/index";
-import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+import NavbarServices from "../../components/NavbarServices";
+import { me1, pressurewashing } from "../../assets/index";
+import Link from "next/link";
+import Image from "next/image";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
-import Testimonials from "../../../../src copy/components/Landing/Testimonials";
-import Socials from "../../../../src copy/components/Landing/Socials";
-import Quotes from "../../../../src copy/components/Landing/Quotes";
-import Tabs from "../../../../src copy/components/Landing/Tabs";
-import FAQ from "../../../../src copy/components/Landing/FAQ";
-import data from "../data/imageslider";
-import { Helmet } from "react-helmet";
+// import Testimonials from "../../components/Landing/Testimonials";
+import Socials from "../../components/Landing/Socials";
+import Quotes from "../../components/Landing/Quotes";
+import Tabs from "../../components/Landing/Tabs";
+import FAQ from "../../components/Landing/FAQ";
+import data from "../../data/imageslider";
+// import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+
+AOS.init();
 
 const PressureWashing = () => {
   const [noOfElement, setNoOfElement] = useState(3);
@@ -30,7 +37,7 @@ const PressureWashing = () => {
       {/* Navbar */}
       <NavbarServices />
       {/* META */}
-      <Helmet>
+      {/* <Helmet>
         <title>Professional Pressure Washing | House Washing Sydney</title>
         <meta
           name="robots"
@@ -41,7 +48,7 @@ const PressureWashing = () => {
           content="Sydney's Best Pressure Cleaners. Professional Pressure Washers specialising in high or soft pressure washing. Get Your Quote Now"
         />
         <meta name="robots" content="index,follow" />
-      </Helmet>
+      </Helmet> */}
 
       <main
         className="relative md:h-[100vh] w-full "
@@ -52,7 +59,7 @@ const PressureWashing = () => {
         {/* Content */}
         <div>
           <figure className="w-full absolute -z-10">
-            <img
+            <Image
               className="w-full object-cover h-[700px] md:h-[100vh] brightness-[.40]"
               src={pressurewashing}
               alt="Background Image"
@@ -65,7 +72,7 @@ const PressureWashing = () => {
             <h2 className="uppercase sm:text-lg md:text-3xl text-sky-400 brightness-110 font-semibold text-shadow">
               Your heavy-duty cleaning, handled.
             </h2>
-            <Link to={"/contact-us"} className="">
+            <Link href="/contact-us" className="">
               <button className="contact-now  z-50 !px-10 md:!text-xl template-shadow-subtle ">
                 Get Your Quote!
               </button>
@@ -131,7 +138,7 @@ const PressureWashing = () => {
                 appeal of your property.
               </span>
             </p>
-            <img
+            <Image
               data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos="zoom-in-up"
@@ -146,7 +153,7 @@ const PressureWashing = () => {
               breathe new life into your outdoor areas.
             </p>
             <div className="py-6 flex justify-center">
-              <Link className="w-full md:w-auto" to={"/contact-us"}>
+              <Link className="w-full md:w-auto" href="/contact-us">
                 <button className="contact-now w-full md:w-auto !capitalize z-50 md:!text-2xl !text-xl !px-10 !py-4 ">
                   Get Your Free Quote!
                 </button>
@@ -196,7 +203,7 @@ const PressureWashing = () => {
             <div className="flex items-center  justify-center mt-7">
               <Link
                 className="hidden  sm:inline-block bg-white text-center hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-                to={"/gallery"}
+                href="/gallery"
               >
                 View More Photos
               </Link>
@@ -210,9 +217,9 @@ const PressureWashing = () => {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-easing="ease-in-out">
+      {/* <div data-aos="fade-up" data-aos-easing="ease-in-out">
         <Testimonials />
-      </div>
+      </div> */}
       <div
         data-aos="fade-in"
         data-aos-easing="ease-in-out"

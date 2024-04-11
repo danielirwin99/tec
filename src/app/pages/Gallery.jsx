@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Footer from "../../../../src copy/components/Footer";
-import Testimonials from "../../../../src copy/components/Landing/Testimonials";
-import Navbar from "../../../../src copy/components/Navbar";
-import GalleryPhotos from "../../../../src copy/components/GalleryPhotos";
-import Socials from "../../../../src copy/components/Landing/Socials";
+import Footer from "../../../components/Footer";
+import Testimonials from "../../../components/Landing/Testimonials";
+import Navbar from "../../../components/Navbar";
+import GalleryPhotos from "../../../components/GalleryPhotos";
+import Socials from "../../../components/Landing/Socials";
 
 const Gallery = () => {
   useEffect(() => {

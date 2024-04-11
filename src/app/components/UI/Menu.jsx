@@ -65,9 +65,9 @@ export default function DropDownMenu() {
         id="demo-customized-button"
         aria-haspopup="true"
         variant="contained"
-        disableElevation
+        disableelevation="true"
         onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
+        endicon={<KeyboardArrowDownIcon />}
       >
         Services
       </div>
@@ -81,28 +81,28 @@ export default function DropDownMenu() {
         onClose={handleClose}
       >
         <div className="flex flex-col justify-center py-4 px-10 bg-cyan-500 items-center space-y-5">
-          <li className="" onClick={handleClose} disableRipple>
+          <li className="" onClick={handleClose} disableripple>
             <a href="/pressure-washing">
               <h3 className="text-xl font-bold no-underline hover:opacity-70 transition-all duration-50 text-white">
                 Pressure Cleaning
               </h3>
             </a>
           </li>
-          <li className="" onClick={handleClose} disableRipple>
+          <li className="" onClick={handleClose} disableripple>
             <a href="/window-cleaning">
               <h3 className="text-xl font-bold no-underline hover:opacity-70 transition-all duration-50 text-white">
                 Window Cleaning
               </h3>
             </a>
           </li>
-          <li className="" onClick={handleClose} disableRipple>
+          <li className="" onClick={handleClose} disableripple>
             <a href="/gutter-cleaning">
               <h3 className="text-xl font-bold no-underline hover:opacity-70 transition-all duration-50 text-white">
                 Gutter Cleaning
               </h3>
             </a>
           </li>
-          <li className="" onClick={handleClose} disableRipple>
+          <li className="" onClick={handleClose} disableripple>
             <a href="/sealing">
               <h3 className="text-xl font-bold no-underline hover:opacity-70 transition-all duration-50 text-white">
                 Driveway Sealing

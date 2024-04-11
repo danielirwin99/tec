@@ -2,6 +2,7 @@ import Image from "next/image";
 import Landing from "./pages/Landing";
 import AboutUs from "./pages/about-us/page";
 
+
 export default function Home() {
   return (
     <div>
