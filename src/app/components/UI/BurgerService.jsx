@@ -41,7 +41,12 @@ export default function BurgerService() {
         aria-label="open drawer"
         onClick={handleDrawerOpen}
         edge="start"
-        sx={{ mr: 1, marginLeft: "20px", ...(open && { display: "none" }) }}
+        sx={{
+          zIndex: 999,
+          mr: 1,
+          marginLeft: "20px",
+          ...(open && { display: "none" }),
+        }}
       >
         <MenuIcon sx={{ height: "40px", width: "40px" }} />
       </IconButton>
