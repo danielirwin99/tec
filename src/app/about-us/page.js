@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../../../../src copy/components/Navbar";
-import Footer from "../../../../src copy/components/Footer";
-import Socials from "../../../../src copy/components/Landing/Socials";
-import { me1, me2, me3 } from "../../../../src copy/assets";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Socials from "../components/Landing/Socials";
+import { me1, me2, me3 } from "../assets";
 import { FaCheck } from "react-icons/fa";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -54,7 +55,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="md:w-1/3 mt-8  md:mt-0">
-                <img
+                <Image
                   className="h-[400px] contrast-[1.05] rounded-sm w-full object-cover"
                   src={me1}
                   alt="TEST"
@@ -68,7 +69,7 @@ const AboutUs = () => {
               className="md:flex items-center w-full md:flex-row my-10 flex-grow md:pb-5"
             >
               <div className="md:w-1/3 mt-5 lg:h-[450px]  md:mt-0">
-                <img
+                <Image
                   src={me2}
                   className="rounded h-[450px] md:h-full -sm w-full object-cover"
                   alt="TEST"
@@ -125,7 +126,7 @@ const AboutUs = () => {
               data-aos-easing="ease-in-out"
               className="inline sm:hidden"
             >
-              <img
+              <Image
                 className="rounded-sm contrast-125"
                 src={me3}
                 alt="Third Picture"

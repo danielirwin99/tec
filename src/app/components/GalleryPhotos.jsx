@@ -5,6 +5,7 @@ import {
   ReactCompareSliderImage,
 } from "react-compare-slider";
 import data from "../../src/app/data/imageslider";
+import Image from "next/image";
 
 const GalleryPhotos = () => {
   const [noOfElement, setNoOfElement] = useState(6);

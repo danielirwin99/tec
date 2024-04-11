@@ -9,13 +9,13 @@ import {
 } from "react-router-dom";
 import PressureWashing from "./pages/PressureWashing";
 import Error from "./pages/Error";
-import Contact from "./pages/Contact";
+import Contact from "./contact-us/page";
 import WindowCleaning from "./pages/WindowCleaning";
 import GutterCleaning from "./pages/GutterCleaning";
 import DrivewaySealing from "./pages/DrivewaySealing";
 import Gallery from "./pages/Gallery";
 import SoftWashing from "./pages/SoftWashing";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./about-us/page";
 import ServiceAreas from "./pages/ServiceAreas";
 import ScrollToTop from "../../src copy/components/UI/ScrollToTop";
 import AOS from "aos";

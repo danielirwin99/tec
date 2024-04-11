@@ -1,8 +1,9 @@
+"use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-import Navbar from "../../../../src copy/components/Navbar";
-import Footer from "../../../../src copy/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const formRef = useRef();
