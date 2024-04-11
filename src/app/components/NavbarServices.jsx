@@ -1,30 +1,30 @@
 import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { logo } from "../assets";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Menu from "./UI/Menu";
 import BurgerService from "./UI/BurgerService";
-import Image from 'next/image'
+import Image from "next/image";
 
 const NavbarServices = () => {
   return (
     <nav className="top-0 z-[999] w-full py-1 px-4 xl:px-20 lg:px-10 absolute ">
       <div className="flex justify-around items-center">
-        <a className="flex items-center justify-center" href="/">
+        <Link className="flex items-center justify-center" href="/">
           <Image
             className="sm:h-24 h-20 w-32 sm:w-40 brightness-150"
             src={logo}
             alt="Logo"
           />
-        </a>
+        </Link>
         <ul className="ms-auto flex lg:space-x-10 items-center ">
           <li className="nav-item hidden lg:flex">
-            <Link className="nav-link text-white" to={"/about-us"}>
+            <Link className="nav-link text-white" href="/about-us">
               About Us
             </Link>
           </li>
           <li className="nav-item hidden lg:flex">
-            <Link className="nav-link text-white" to={"/gallery"}>
+            <Link className="nav-link text-white" href="/gallery">
               Gallery
             </Link>
           </li>
@@ -39,7 +39,7 @@ const NavbarServices = () => {
             </a>
           </li> */}
           <li className="nav-item hidden lg:flex pr-3">
-            <Link className="nav-link text-white" to={"/contact-us"}>
+            <Link className="nav-link text-white" href="/contact-us">
               Contact Us
             </Link>
           </li>
@@ -58,9 +58,9 @@ const NavbarServices = () => {
             </a>
           </li>
           <li className="nav-item lg:hidden lg:pl-5">
-            <a className="nav-link bg-white">
+            <div className="nav-link ">
               <BurgerService />
-            </a>
+            </div>
           </li>
         </ul>
       </div>

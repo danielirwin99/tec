@@ -4,8 +4,8 @@ import { BsTelephone } from "react-icons/bs";
 import BurgerBar from "./UI/BurgerBar";
 import { logo } from "../assets/index.js";
 import Link from "next/link";
-import Menu from "./UI/Menu";
 import Image from 'next/image'
+import Menu from "./UI/Menu";
 
 const Navbar = () => {
   return (

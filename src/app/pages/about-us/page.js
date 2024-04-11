@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Socials from "../components/Landing/Socials";
-import { me1, me2, me3 } from "../assets";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Socials from "../../components/Landing/Socials";
+import { me1, me2, me3 } from "../../assets/index";
 import { FaCheck } from "react-icons/fa";
 import Image from "next/image";
 

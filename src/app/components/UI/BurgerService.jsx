@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -8,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { logo } from "../../assets";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Image from "next/image";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -74,13 +75,13 @@ export default function BurgerService() {
         <div className="burger__list">
           <div className="burger__list--container">
             <div className="burger__list--wrapper">
-              <a
+              <Link
                 onClick={handleDrawerClose}
                 href="/"
                 className="burger__list--header"
               >
                 Home
-              </a>
+              </Link>
             </div>
             <div className="burger__list--wrapper">
               <Link

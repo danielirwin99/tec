@@ -1,21 +1,17 @@
-import React, { useEffect } from "react";
-import Footer from "../../../../src copy/components/Footer";
-import NavbarServices from "../../../../src copy/components/NavbarServices";
-import {
-  sealing,
-  sealing1,
-  sealing2,
-  service2,
-} from "../../../../src copy/assets/index";
-import { Link } from "react-router-dom";
-import Testimonials from "../../../../src copy/components/Landing/Testimonials";
-import Socials from "../../../../src copy/components/Landing/Socials";
-import Quotes from "../../../../src copy/components/Landing/Quotes";
+// import React, { useEffect } from "react";
+import Footer from "../../components/Footer";
+import NavbarServices from "../../components/NavbarServices";
+import { sealing, sealing1, sealing2, service2 } from "../../assets/index";
+import Link from "next/link";
+import Image from "next/image";
+// import Testimonials from "../components/Landing/Testimonials";
+import Socials from "../../components/Landing/Socials";
+import Quotes from "../../components/Landing/Quotes";
 
 const DrivewaySealing = () => {
-  useEffect(() => {
-    document.title = "Driveway Sealing & Pressure Washing";
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Driveway Sealing & Pressure Washing";
+  // }, []);
   return (
     <>
       <meta
@@ -33,7 +29,7 @@ const DrivewaySealing = () => {
         {/* Content */}
         <div>
           <figure className="w-full absolute -z-10">
-            <img
+            <Image
               className="w-full object-cover h-[700px] md:h-[100vh] brightness-[.3]"
               src={sealing}
               alt="Background Image"
@@ -46,7 +42,7 @@ const DrivewaySealing = () => {
             <h2 className="uppercase text-lg md:text-3xl text-blue-200 font-semibold text-shadow">
               Restore and Protect Your Driveway.
             </h2>
-            <Link to={"/contact-us"} className="">
+            <Link href="/contact-us" className="">
               <button className="contact-now z-50 md:!text-xl ">
                 Claim Your Free Quote
               </button>
@@ -105,7 +101,7 @@ const DrivewaySealing = () => {
               provide expert guidance on driveway sealing and painting.{" "}
             </p>
             <div className=" py-5 flex justify-center">
-              <Link to={"/contact-us"}>
+              <Link href="/contact-us">
                 <button className="contact-now z-50 md:!text-xl ">
                   Contact Us Now
                 </button>
@@ -146,7 +142,7 @@ const DrivewaySealing = () => {
       <section className="md:my-20 mb-20 py-2 bg-gray-50 border-t-2 border-b-2 ">
         <Socials />
       </section>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Quotes />
       {/* Footer */}
       <Footer />

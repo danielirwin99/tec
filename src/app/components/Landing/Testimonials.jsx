@@ -1,9 +1,10 @@
+// "use client";
 // import React from "react";
 // import { data } from "../../data/Testimonials";
 // import { BsStarFill } from "react-icons/bs";
 // import Slider from "react-slick";
-// // import "slick-carousel/slick/slick.css";
-// // import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 // import { FcGoogle } from "react-icons/fc";
 
 // const Testimonials = () => {
